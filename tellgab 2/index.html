@@ -1,0 +1,532 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/e8bf77adac.js" crossorigin="anonymous"></script>
+  <title>TellGab Laundry and Drycleaning Services</title>
+  
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="all.css">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style3.css">
+  <link rel="stylesheet" href="/sample/material-kit-master/material-kit-master/assets/css/material-kit.css">
+</head>
+<body>
+  <!-- start of navigation bar -->
+ <nav class="navbar fixed-top">
+    <div class="logo">
+      <i class="fa-solid fa-soap"></i><div id="tg"><b> TELLGAB</div>Laundry</b> 
+    </div>
+    <div class="menu-content">
+      <ul id="menuList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us/index.html">About Us</a></li>
+        <li><a href="price-list/index.html">Price List</a></li>
+        <li><a href="service/index.html">Service</a></li>
+        <li><a href="contact/index.html">Contact</a></li>
+      </ul>
+      <div class="pick">
+        <button class="button animated flip" >Schedule a Pick Up</button>
+      </div>
+    </div>
+    <div class="menu-btn " onclick="togglemenu()">
+      <div class="menu-btn__burger"></div>
+    </div>
+    <!-- <img src="menu.png" class="menu-icon" onclick="togglemenu()">   -->
+ </nav>
+ <!-- end of navigation bar -->
+ <div id="clr"></div>;
+ <!-- try form -->
+  <div class="popup">
+    <div class="close-btn">&times;</div>
+    <div class="form">
+      <h2>Schedule a pickup</h2>
+      <div class="form-element">
+        <input type="text" id="name" placeholder="Your name">
+      </div>
+      <div class="form-element">
+        <input type="text" id="email" placeholder="Enter email">
+      </div>
+      <div class="form-element">
+        <input type="text" id="number" placeholder="Your phone number">
+      </div>
+      <div class="form-element">
+        <input type="text" id="address" placeholder="Address">
+      </div>
+      <div class="form-element">
+        <label for="date">Pickup</label>
+        <input type="date" id="date" placeholder="Pick up date">
+      </div>
+      <div class="form-element">
+        <select type="services">
+          <option value="full Laundry"  name="full Laundry">Full Laundry</option>
+          <option value="express" name="express">Express</option>
+          <option value="iron only" name="iron only">Iron only</option>
+          <option value="drycleaning" name="drycleaning">Drycleaning</option>
+        </select>
+      </div>
+      <div class="form-element">
+        <textarea type="message" placeholder="Your comments"></textarea>
+      </div>
+      <div class="form-element">
+       <a href=""> <button>Order now</button> </a> 
+      </div>
+      
+    </div>
+  </div>
+ <!-- try form ends -->
+ <div id="clr"></div>;
+<!-- slideshow starts -->
+ <div class="ad">
+    <div class="slider">
+      <div class="myslider fade" style="display: block;">
+        <div class="txt">
+          <h1>LAUNDRY SERVICE</h1>
+          <p>We take care of your cloths <br><div class="button animated flip">Schedule a Pick Up</div>
+          </p>
+        </div>
+        <img src="box02-img01.jpg" style="width: 100%; height: 80%;">
+      </div>
+      <div class="myslider fade">
+        <div class="txt">
+          <h1>DRY CLEANING</h1>
+          <p>We will give your cloths the best treatment <br><div class="button animated flip">Schedule a Pick Up</div>
+          </p>
+        </div>
+        <img src="images (49).jpeg" style="width: 100%; height: 80%;">
+      </div>
+      <div class="myslider fade">
+        <div class="txt">
+          <h1>EXPRESS SERVICE</h1>
+          <p>We will deliver your cloths on time <br><div class="button animated flip">Schedule a Pick Up</div>
+          </p>
+        </div>
+        <img src="images (48).jpeg" style="width: 100%; height: 80%;">
+      </div>
+      <div class="myslider fade">
+        <div class="txt">
+          <h1>LAUNDRY SERVICE</h1>
+          <p>We will take good care of your cloths <br><div class="button animated flip">Schedule a Pick Up</div>
+          </p>
+        </div>
+        <img src="s-2.jpg" style="width: 100%; height: 80%;">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next"onclick="plusSlides(1)">&#10095;</a>
+      <div class="dotsbox" style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>    
+    </div>
+ </div>
+ <!-- slideshow ends -->
+ <div id="clr"></div>
+ <!-- first cut starts -->
+ <div class="cut1">
+    <div class="section1">
+      <div class="box1">
+        <div class="box1__img"><img src="images (53).jpeg" width="594" height="493">
+          <div class="box1__img-label">
+            <div class="tt-text01">Best</div>
+            At your
+            <br>Service!
+          </div>
+        </div>
+        <div class="box1__content">
+          <div class="title-block">
+            <h4 class="title-block__title">
+              Commercial laundry & Drycleaning services
+            </h4>
+          </div>
+          <div class="box1__wrapper-img"></div>
+          <p>TELLGAB is the the right place for you! we provide
+            drycleaning services, repairs, and also provide home services.
+            Whether you are dry cleaning shirts, suits, blouses or looking for a quality duvet-cleaning service. TELLGAB provides you with the highest quality and professional services directly to your doorstep.
+            Just ironing you need? dont worry, we provide an iron-only service which would make you never to worry about ironing again. Join the world's ever-growing laundry and dry cleaning revolution by scheduling a collection. Fill our already provided laundry bags with your percious garment and we'll clean and deliver at a time and place that suits you or collect it at one of our collection centers.
+            so dont forget queueing at your high-street laundrette. With TELLGAB, all your laundry, dry cleaning and ironing is taken care of.
+          </p>
+        </div>
+      </div>
+    </div>
+ </div>
+ <!-- first cut ends -->
+ <div id="clr"></div>
+ <!-- second -->
+ <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
+    <section class="pt-3 pb-4" id="count-stats">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 mx-auto py-3">
+            <div class="row">
+              <div class="col-md-4 position-relative">
+                <div class="p-3 text-center">
+                  <h1 class="text-gradient text-primary"><span id="state1" countTo="70">100</span>+</h1>
+                  <h5 class="mt-3">Cloths Delivered</h5>
+                  <p class="text-sm font-weight-normal">We handle, a lot of bulk wash, drycleaning, ironing only. We got you covered!</p>
+                </div>
+                <hr class="vertical dark">
+              </div>
+              <div class="col-md-4 position-relative">
+                <div class="p-3 text-center">
+                  <h1 class="text-gradient text-primary"> <span id="state2" countTo="15">5</span>+</h1>
+                  <h5 class="mt-3">Star Review</h5>
+                  <p class="text-sm font-weight-normal">Our customers love how we take care of their cloths!</p>
+                </div>
+                <hr class="vertical dark">
+              </div>
+              <div class="col-md-4">
+                <div class="p-3 text-center">
+                  <h1 class="text-gradient text-primary" id="state3" countTo="4">4</h1>
+                  <h5 class="mt-3">Days Delivery</h5>
+                  <p class="text-sm font-weight-normal">Come rain, come shine we will always delivery on time!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <!-- second ends -->
+    <div id="clr"></div>
+    <!-- third-text-flip starts -->
+    <section class="some">
+      <div class="container-2">
+        <div class="row align-items-center">
+          <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
+            <div class="rotating-card-container">
+              <div class="card card-rotate card-background card-background-mask-primary shadow-primary mt-md-0 ">
+                <div class="front front-background" style="background-image: url(https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80); background-size: cover;">
+                  <div class="card-body py-7 text-center">
+                    <i class="material-icons text-white text-4xl my-3">touch_app</i>
+                    <h3 class="text-white">How We <br /> Work</h3>
+                    <p class="text-white opacity-8">We use premium cleaning products and standardised processes to take care of your cloths and give them refreshed look.</p>
+                  </div>
+                </div>
+                <div class="back back-background" style="background-image: url(https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80); background-size: cover;">
+                  <div class="card-body pt-7 text-center">
+                    <h3 class="text-white">Discover More</h3>
+                    <p class="text-white opacity-8"> Our Service is dedicated to making your life easier by providing pick up laundry service, Giving your one less thing to worry about.</p>
+                    <div class="pick">
+                      <div class="button animated flip" >Schedule a Pick Up</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 ms-auto">
+            <div class="row justify-content-start">
+              <div class="col-md-6">
+                <div class="info">
+                  <i class="material-icons text-gradient text-primary text-3xl">Steam Iron</i>
+                  <h5 class="font-weight-bolder mt-3">Grade A Quality</h5>
+                  <p class="pe-5">These services are accomplished under the guidance of adroit personnel who have affluent industry proficiency.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info">
+                  <i class="material-icons text-gradient text-primary text-3xl">Industrial Dryer</i>
+                  <h5 class="font-weight-bolder mt-3">15KVA Quality</h5>
+                  <p class="pe-3">Our customers love on our reliable dry cleaning services for the fast, accurate, top quality results.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-start mt-5">
+              <div class="col-md-6 mt-3">
+                <i class="material-icons text-gradient text-primary text-3xl">Price charge</i>
+                <h5 class="font-weight-bolder mt-3">Saves Time & Money</h5>
+                <p class="pe-5">Our prices are simple and affordable which are easy on our customers pocket in comparison with the high street prices</p>
+              </div>
+              <div class="col-md-6 mt-3">
+                <div class="info">
+                  <i class="material-icons text-gradient text-primary text-3xl">Our Approach</i>
+                  <h5 class="font-weight-bolder mt-3">To Serve You</h5>
+                  <p class="pe-3">We approach workforce accommodations with a property development mindset. Our “Develop. Own. Operate.” enable clients to focus on their core business</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- third-text-flip ends -->
+ </div>
+ <div id="clr"></div>
+ <!-- fourth-box-container -->
+ <div class="fourth-element-container">
+  <div class="section-inner">
+    <div class="box">
+      <div class="box__content">
+        <div class="title-block2">
+          <div class="title-block2__label">
+            Laundry service for your business!   
+          </div>
+          <h4 class="title-block2__title">Commercial Service</h4>
+        </div>
+        <p>
+          Dont forget queueing at your high-street laundrette. With TELLGAB, all your laundry, dry cleaning and ironing is taken care of.
+         Large corporations have determined that there is a financial benefit to outsourcing back office work because it saves money. Allowing us to do your laundry is cost effective and will allow you and your employees to focus on your core business. We offer smart solutions to meet your commercial laundry needs. Our Commercial Laundry Clients include:
+        </p>
+        <div class="row2 tt-list01__top">
+          <div class="col-lg-6">
+            <ul class="tt-list01">
+              <li>Salon & Spas</li>
+              <li>Restaurants & Caterers</li>
+              <li>Religious Organisations</li>
+              <li>Daycare Centers</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ul class="tt-list01">
+              <li>Assisted Living / Nursing Homes</li>
+              <li>Hotels & Motels</li>
+              <li>Nail & Hair Salon</li>
+              <li>Athletic Facilities / Gyms</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+ <div id="clr"></div>
+  <!-- cut2 starts -->
+  <div class="cut1">
+    <div class="section1">
+      <div class="box1">
+        <div class="box1__img"><img src="images (50).jpeg" width="594" height="493">
+        </div>
+        <div class="col-md-7">
+          <div class="title-block">
+            <h5 class="title-block__title1">
+              Questions & Answers
+            </h5>
+          </div>
+          <div class="box1__wrapper-img"></div>
+          <div class="accordance init-accordance">
+            <div class="tt-item ">
+              <div class="tt-item__title " >
+                What if my cloths are heavily stained?
+                <span class="arrow"></span>
+              </div>
+              <div class="tt-item__content">
+                <p>
+                  We try our best to remove the stains by adapting the best washing cycle, detergent, temperature suitable for the garment, however in case of tough stains, we will recommend you to use our stain removal or dry cleaning service.
+                </p>
+              </div>
+            </div>
+            <div class="tt-item">
+              <div class="tt-item__title " >
+                How long would it take you to return the garments?
+                <span class="arrow"></span>
+              </div>
+              <div class="tt-item__content">
+                <p>
+                  It takes us 4days to deliver your laundry come rain, come sunshine. For express service its just 24 hours and for ironing just 24 hours also.
+                </p>
+              </div>
+            </div>
+            <div class="tt-item">
+              <div class="tt-item__title">
+                How can i pay for services rendered?
+                <span class="arrow"></span>
+              </div>
+              <div class="tt-item__content">
+              <p>
+                We accept cash at all our collectin centers, we also accept bank transfer and pos. we also have a deposite policy were you can pay a certain amount and balance up upon collection.
+              </p>
+               
+              </div>
+            </div>
+            <div class="tt-item">
+              <div class="tt-item__title">
+                Does drycleaning remove all the stains?
+                <span class="arrow"></span>
+              </div>
+              <div class="tt-item__content" >
+                <p>
+                  The purpose of our drycleaning & full luandry is to do our best in restoring our cloth to how is was. we use the best solvents when restoring your cloths.
+                </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- cut2 stops -->
+  <div id="clr"></div>
+  <!-- reviews starts -->
+    <div class="review-body">
+      <!-- comments -->
+      <section id="testimonials">
+        <!-- headings -->
+        <div class="testimonial-heading">
+          <span>Comments</span>
+          <h1>Clients Says</h1>
+        </div>
+        <!--testimonials-box-container  -->
+        <div class="testimonial-box-container">
+          <!-- box-1 -->
+          <div class="testimonial-box">
+            <!-- top -->
+            <div class="box-top">
+              <!-- profile -->
+              <div class="profile">
+                <!-- img -->
+                <div class="profile-img">
+                  <img src="images (4).jpg" />
+                </div>
+                <!-- name-and-username -->
+                <div class="name-user">
+                  <strong>Taofeek Ijaz</strong>
+                  <span>@Taofeekijazweb</span>
+                </div>
+              </div>
+              <!-- reviews -->
+              <div class="reviews">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i> <!-- Empty Star -->  
+              </div>
+            </div>
+            <!-- comments -->
+            <div class="client-comment">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores aliquam vitae quis placeat iusto odit! Quos, perferendis. Nihil molestiae asperiores vitae minima alias. Qui asperiores sequi, dolores ex ullam quibusdam?</p>
+            </div>
+          </div>
+          <!-- box-2 -->
+          <div class="testimonial-box">
+            <!-- top -->
+            <div class="box-top">
+              <!-- profile -->
+              <div class="profile">
+                <!-- img -->
+                <div class="profile-img">
+                  <img src="14ff3a6b53adf927e8c9a70957281eaf.jpg" />
+                </div>
+                <!-- name-and-username -->
+                <div class="name-user">
+                  <strong>Rachel Braved</strong>
+                  <span>@Rachelbraved</span>
+                </div>
+              </div>
+              <!-- reviews -->
+              <div class="reviews">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i> <!-- Empty Star -->  
+              </div>
+            </div>
+            <!-- comments -->
+            <div class="client-comment">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores aliquam vitae quis placeat iusto odit! Quos, perferendis. Nihil molestiae asperiores vitae minima alias. Qui asperiores sequi, dolores ex ullam quibusdam?</p>
+            </div>
+          </div>
+          <!-- box-3 -->
+          <div class="testimonial-box">
+            <!-- top -->
+            <div class="box-top">
+              <!-- profile -->
+              <div class="profile">
+                <!-- img -->
+                <div class="profile-img">
+                  <img src="Ec0nYcvWoAIqvZR.jpeg" />
+                </div>
+                <!-- name-and-username -->
+                <div class="name-user">
+                  <strong>White Hillstone</strong>
+                  <span>@Whitehillstone</span>
+                </div>
+              </div>
+              <!-- reviews -->
+              <div class="reviews">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i> <!-- Empty Star -->  
+              </div>
+            </div>
+            <!-- comments -->
+            <div class="client-comment">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores aliquam vitae quis placeat iusto odit! Quos, perferendis. Nihil molestiae asperiores vitae minima alias. Qui asperiores sequi, dolores ex ullam quibusdam?</p>
+            </div>
+          </div>
+          <!-- box-4 -->
+          <div class="testimonial-box">
+            <!-- top -->
+            <div class="box-top">
+              <!-- profile -->
+              <div class="profile">
+                <!-- img -->
+                <div class="profile-img">
+                  <img src="received_1639071912815733.jpeg" />
+                </div>
+                <!-- name-and-username -->
+                <div class="name-user">
+                  <strong>Tega Gabel</strong>
+                  <span>@Tegagabel</span>
+                </div>
+              </div>
+              <!-- reviews -->
+              <div class="reviews">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i> <!-- Empty Star -->  
+              </div>
+            </div>
+            <!-- comments -->
+            <div class="client-comment">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores aliquam vitae quis placeat iusto odit! Quos, perferendis. Nihil molestiae asperiores vitae minima alias. Qui asperiores sequi, dolores ex ullam quibusdam?</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </div> 
+  <!-- reviews end -->
+  <div id="clr"></div>
+  <footer class="footer-body">
+    <div class="footer-content">
+      <p> <b> GET STARTED WITH HIGH QUALITY DRY CLEANING AND LAUNDRY SERVICES </b> 
+        <br>WE WASH, DRY CLEAN, COLLECT AND DELIVER RIGHT TO YOUR DOORSTEP
+      </p>
+      <ul class="socials">
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2022 TellGab. designed by <span>Tito'sco</span></p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+  <script src="telgab.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

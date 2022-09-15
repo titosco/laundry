@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/e8bf77adac.js" crossorigin="anonymous"></script>
+  <title>Price List</title>
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/all.css">
+  <link rel="stylesheet" href="/animate.css">
+</head>
+<body>
+   <!-- start of navigation bar -->
+   <nav class="navbar fixed-top">
+    <div class="logo">
+      <i class="fa-solid fa-soap"></i><div id="tg"><b> TELLGAB</div>Laundry</b>
+    </div>
+    <div class="menu-content">
+      <ul id="menuList">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about-us/index.html">About Us</a></li>
+        <li><a href="index.html">Price List</a></li>
+        <li><a href="../service/index.html">Service</a></li>
+        <li><a href="../contact/index.html">Contact</a></li>
+      </ul>
+      <div class="pick">
+        <div class="button animated flip" >Schedule a Pick Up</div>
+      </div>
+    </div>
+    <div class="menu-btn " onclick="togglemenu()">
+      <div class="menu-btn__burger"></div>
+    </div>
+    <!-- <img src="menu.png" class="menu-icon" onclick="togglemenu()">   -->
+ </nav>
+ <!-- end of navigation bar -->
+ <div id="clr"></div>
+  <!-- try form -->
+  <div class="popup">
+    <div class="close-btn">&times;</div>
+    <div class="form">
+      <h2>Schedule a pickup</h2>
+      <div class="form-element">
+        <input type="text" id="name" placeholder="Your name">
+      </div>
+      <div class="form-element">
+        <input type="text" id="email" placeholder="Enter email">
+      </div>
+      <div class="form-element">
+        <input type="text" id="number" placeholder="Your phone number">
+      </div>
+      <div class="form-element">
+        <input type="text" id="address" placeholder="Address">
+      </div>
+      <div class="form-element">
+        <label for="date">Pickup</label>
+        <input type="date" id="date" placeholder="Pick up date">
+      </div>
+      <div class="form-element">
+        <select type="services">
+          <option value="full Laundry"  name="full Laundry">Full Laundry</option>
+          <option value="express" name="express">Express</option>
+          <option value="iron only" name="iron only">Iron only</option>
+          <option value="drycleaning" name="drycleaning">Drycleaning</option>
+        </select>
+      </div>
+      <div class="form-element">
+        <textarea type="message" placeholder="Your comments"></textarea>
+      </div>
+      <div class="form-element">
+       <a href=""> <button>Order now</button> </a> 
+      </div>
+      
+    </div>
+  </div>
+  <!-- try form ends -->
+  <div id="clr"></div>;
+  <!-- SUBTITLE -->
+  <div id="subtitle-wrapper">
+    <div class="contain">
+      <div class="header">
+        <span>
+          <span>
+            <a href="/index.html">Home / <span class="last">Price List</span></a>
+          </span>
+        </span>
+      </div>
+      <h1 class="subtitle_title">Price List</h1>
+    </div>
+    <div class="bubble-wrap">
+      <span></span>
+      <span></span>
+    </div>
+    <div class="bubble-wrap">
+      <span></span>
+      <span></span>
+    </div>
+    <div class="bubble-wrap">
+      <span></span>
+      <span></span>
+    </div>
+    <div class="bubble-wrap">
+      <span></span>
+      <span></span>
+    </div>
+    <div class="bubble-wrap">
+      <span></span>
+      <span></span>
+    </div>
+    <div class="bubble-wrap">
+      <span></span>
+      <span></span>
+    </div>
+    <div class="bubble-wrap">
+      <span></span>
+      <span></span>
+    </div>
+    <div class="bubble-wrap">
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <!-- SUBTITLE ENDS -->
+  <div id="clr"></div>
+  <!-- notice starts -->
+  <div class="notice">
+    <h1 class="sub_title"><b> Collection / Delivery Charges</b></h1>
+    <br><ul class="my-list">
+    <li>#1000 for pick up and delivery</li>
+    <li>#500 for pickup only and delivery only</li>
+    <li>free for bulk wash and orders above #10,000</li>
+    <li>Please note that the price at which you drop your cloth
+     <br> might be diferent from when you are collecting it
+     <br> since we add charges for repairs and deep stain removals.
+    </li>
+    <li>Prices may increase due to inflation </li>
+    <li>the prices for children would be halved so state it.</li>
+    </ul>
+  </div>
+  <!-- notice ends -->
+  <div id="clr"></div>
+  <!-- product price lists -->
+  <div class="search-Products">
+    <div class="wrapper">
+      <div id="search-container">
+        <input 
+          type="search" 
+          id="search-input" 
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value"
+        onclick="filterProduct('Suit')">
+         Suit
+        </button>
+        <button class="button-value"
+         onclick="filterProduct('Trad')">
+         Trad
+        </button>
+        <button class="button-value"
+         onclick="filterProduct('Shirt')">
+         Shirt
+        </button>
+        <button class="button-value"
+         onclick="filterProduct('Jeans')">
+         Jeans
+        </button>
+        <button class="button-value"
+         onclick="filterProduct('Trousers')">
+         Trousers
+        </button>
+        <button class="button-value"
+         onclick="filterProduct('Gowns')">
+         Gowns
+        </button>
+        <button class="button-value"
+         onclick="filterProduct('Others')">Others</button>
+      </div>
+      <div id="products"></div>
+    </div>
+  </div>
+  <!-- product pricelist ends -->
+  <div id="clr"></div>
+
+  <footer class="footer-body">
+    <div class="footer-content">
+      <p> <b> GET STARTED WITH HIGH QUALITY DRY CLEANING AND LAUNDRY SERVICES </b> 
+        <br>WE WASH, DRY CLEAN, COLLECT AND DELIVER RIGHT TO YOUR DOORSTEP
+      </p>
+      <ul class="socials">
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2022 TellGab. designed by <span>Tito'sco</span></p>
+    </div>
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script src="pricelist.js"></script>
+</body>
+</html>
